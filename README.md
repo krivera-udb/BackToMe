@@ -177,3 +177,20 @@ Estas capturas muestran cómo se adapta BackToMe a una pantalla de teléfono. Se
   </tr>
 </table>
 
+## Capturas de la aplicación en laptop
+
+Estas capturas muestran las pantallas principales de BackToMe en una pantalla de computadora.
+
+<table>
+  <tr>
+    <td align="center"><img src="documentacion/capturas/computadora/inicio-sesion.png" alt="Inicio de sesión en laptop" width="280"><br><sub>Inicio de sesión</sub></td>
+    <td align="center"><img src="documentacion/capturas/computadora/registro.png" alt="Registro en laptop" width="280"><br><sub>Registro</sub></td>
+    <td align="center"><img src="documentacion/capturas/computadora/inicio.png" alt="Página de inicio en laptop" width="280"><br><sub>Inicio</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="documentacion/capturas/computadora/buscar.png" alt="Búsqueda de objetos en laptop" width="280"><br><sub>Buscar objetos</sub></td>
+    <td align="center"><img src="documentacion/capturas/computadora/publicar.png" alt="Formulario para publicar en laptop" width="280"><br><sub>Publicar un objeto</sub></td>
+    <td align="center"><img src="documentacion/capturas/computadora/reportes.png" alt="Reportes en laptop" width="280"><br><sub>Reportes</sub></td>
+  </tr>
+</table>
+
