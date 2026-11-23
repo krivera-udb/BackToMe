@@ -1152,9 +1152,21 @@ button: focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,t
     font-size: 19px;
     line-height: 1;
   }
+  .mobile-link small {
+    display: none;
+  }
   .mobile-link.active {
+    flex: 0 0 auto;
+    min-width: max-content;
+    padding: 0 7px;
     color: var(--blue);
     font-weight: 750;
+  }
+  .mobile-link.active small {
+    display: block;
+    font-size: 9px;
+    line-height: 1.1;
+    white-space: nowrap;
   }
   .mobile-link.create-link span {
     width: 26px;
