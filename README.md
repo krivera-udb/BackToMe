@@ -159,7 +159,7 @@ Actualiza esta sección con la dirección definitiva después de desplegar y pro
 
 ## Capturas de la aplicación en móvil
 
-Estas capturas muestran cómo se adapta BackToMe a una pantalla de teléfono. Se incluyen las pantallas de acceso, registro, inicio, búsqueda, publicación y reportes.
+Estas capturas muestran cómo se adapta BackToMe a una pantalla de teléfono. Se incluyen las pantallas de acceso, registro, inicio, búsqueda, publicación, solicitudes y reportes.
 
 <table>
   <tr>
@@ -171,6 +171,9 @@ Estas capturas muestran cómo se adapta BackToMe a una pantalla de teléfono. Se
     <td align="center"><img src="documentacion/capturas/movil/buscar.jpg" alt="Búsqueda de objetos en móvil" width="190"><br><sub>Buscar objetos</sub></td>
     <td align="center"><img src="documentacion/capturas/movil/publicar.jpg" alt="Formulario de publicación en móvil" width="190"><br><sub>Publicar un objeto</sub></td>
     <td align="center"><img src="documentacion/capturas/movil/reportes.jpg" alt="Reportes en móvil" width="190"><br><sub>Reportes y gráfica</sub></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="documentacion/capturas/movil/solicitudes.jpg" alt="Solicitudes en móvil" width="190"><br><sub>Solicitudes y botón para abrir la conversación</sub></td>
   </tr>
 </table>
 
