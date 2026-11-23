@@ -81,7 +81,13 @@ async function subirFotoCloudinary(fotoDataUrl) {
     const respuesta = await fetch(`https://api.cloudinary.com/v1_1/${encodeURIComponent(cloudName)}/image/upload`, { method: 'POST', body: formulario });
     const resultado = await respuesta.json().catch(() => ({}));
     if (!respuesta.ok || typeof resultado.secure_url !== 'string') {
-        throw new Error('Cloudinary no aceptó la imagen. Revisa la configuración e inténtalo de nuevo.');
+        const codigo = Number(resultado?.error?.http_code || respuesta.status || 502);
+        const detalle = String(resultado?.error?.message || 'Cloudinary no devolvió una URL segura.')
+            .replace(/[\r\n]+/g, ' ')
+            .slice(0, 240);
+        const error = new Error(`HTTP ${codigo}: ${detalle}`);
+        error.codigoCloudinary = codigo;
+        throw error;
     }
     return resultado.secure_url;
 }
@@ -793,7 +799,12 @@ app.post('/api/objects', exigirSesion, async (req, res) => {
                 fotoGuardada = await subirFotoCloudinary(foto);
             } catch (error) {
                 console.error('Error al subir foto a Cloudinary:', error.message);
-                return res.status(502).json({ mensaje: error.message || 'No se pudo guardar la foto en Cloudinary.' });
+                const codigo = Number(error.codigoCloudinary || 0);
+                return res.status(502).json({
+                    mensaje: codigo
+                        ? `Cloudinary rechazó la foto (HTTP ${codigo}). Revisa los registros del servidor.`
+                        : 'No se pudo conectar con Cloudinary. Revisa los registros del servidor.'
+                });
             }
         }
         const [resultado] = await conexion.execute(
@@ -843,7 +854,15 @@ app.patch('/api/objects/:id', exigirSesion, async (req, res) => {
         }
         if (esDataUrl && cloudinaryConfigurado()) {
             try { fotoGuardada = await subirFotoCloudinary(fotoGuardada); }
-            catch (error) { console.error('Error al subir foto editada a Cloudinary:', error.message); return res.status(502).json({ mensaje: error.message || 'No se pudo guardar la foto en Cloudinary.' }); }
+            catch (error) {
+                console.error('Error al subir foto editada a Cloudinary:', error.message);
+                const codigo = Number(error.codigoCloudinary || 0);
+                return res.status(502).json({
+                    mensaje: codigo
+                        ? `Cloudinary rechazó la foto (HTTP ${codigo}). Revisa los registros del servidor.`
+                        : 'No se pudo conectar con Cloudinary. Revisa los registros del servidor.'
+                });
+            }
         }
         const tipo = tipoVisible === 'Perdido' ? 'perdido' : tipoVisible === 'Encontrado' ? 'encontrado' : actual.tipo;
         const estado = tipoVisible === 'Entregado' ? 'entregado' : 'publicado';
