@@ -1,0 +1,10 @@
+.env
+node_modules/
+npm-debug.log*
+
+node_modules/
+**/node_modules/
+.env
+.env.*
+!.env.example
+react-app/dist/
