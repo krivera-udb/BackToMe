@@ -151,12 +151,26 @@ Tras guardar las variables, reinicia el sitio Node.js. React y la API se sirven 
 
 ### Dirección pública
 
-- URL publicada: `PENDIENTE DE COMPLETAR`
+- URL publicada: [https://backtome.alwaysdata.net](https://backtome.alwaysdata.net)
 - Proveedor: Alwaysdata (modalidad gratuita de demostración).
-- Repositorio público: `PENDIENTE DE COMPLETAR`
+- Repositorio público: [https://github.com/krivera-udb/BackToMe](https://github.com/krivera-udb/BackToMe)
 
 Actualiza esta sección con la dirección definitiva después de desplegar y probar el sitio.
 
-## Capturas para la entrega
+## Capturas de la aplicación en móvil
 
-Guarda capturas sin contraseñas, correos personales ni carnés reales en `documentacion/capturas/`. Incluye como mínimo inicio, publicación/búsqueda, solicitudes o mensajes, entregados, reportes y perfil. Después agrégalas aquí con rutas relativas, por ejemplo `![Inicio](documentacion/capturas/inicio.png)`.
+Estas capturas muestran cómo se adapta BackToMe a una pantalla de teléfono. Se incluyen las pantallas de acceso, registro, inicio, búsqueda, publicación y reportes.
+
+<table>
+  <tr>
+    <td align="center"><img src="documentacion/capturas/movil/inicio-sesion.jpg" alt="Inicio de sesión en móvil" width="190"><br><sub>Inicio de sesión</sub></td>
+    <td align="center"><img src="documentacion/capturas/movil/registro.jpg" alt="Registro en móvil" width="190"><br><sub>Registro</sub></td>
+    <td align="center"><img src="documentacion/capturas/movil/inicio.jpg" alt="Página de inicio en móvil" width="190"><br><sub>Inicio y navegación móvil</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="documentacion/capturas/movil/buscar.jpg" alt="Búsqueda de objetos en móvil" width="190"><br><sub>Buscar objetos</sub></td>
+    <td align="center"><img src="documentacion/capturas/movil/publicar.jpg" alt="Formulario de publicación en móvil" width="190"><br><sub>Publicar un objeto</sub></td>
+    <td align="center"><img src="documentacion/capturas/movil/reportes.jpg" alt="Reportes en móvil" width="190"><br><sub>Reportes y gráfica</sub></td>
+  </tr>
+</table>
+
