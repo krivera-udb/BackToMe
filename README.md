@@ -194,3 +194,23 @@ Estas capturas muestran las pantallas principales de BackToMe en una pantalla de
   </tr>
 </table>
 
+
+## Capturas de la aplicación en tablet (iPad Pro)
+
+Estas capturas muestran las pantallas principales de BackToMe en el simulador de iPad Pro, en orientación vertical.
+
+<table>
+  <tr>
+    <td align="center"><img src="documentacion/capturas/tablet/inicio-sesion.png" alt="Inicio de sesión en tablet iPad Pro" width="220"><br><sub>Inicio de sesión</sub></td>
+    <td align="center"><img src="documentacion/capturas/tablet/registro.png" alt="Registro en tablet iPad Pro" width="220"><br><sub>Registro</sub></td>
+    <td align="center"><img src="documentacion/capturas/tablet/inicio.png" alt="Página de inicio en tablet iPad Pro" width="220"><br><sub>Inicio</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="documentacion/capturas/tablet/buscar.png" alt="Búsqueda de objetos en tablet iPad Pro" width="220"><br><sub>Buscar objetos</sub></td>
+    <td align="center"><img src="documentacion/capturas/tablet/publicar.png" alt="Publicar un objeto en tablet iPad Pro" width="220"><br><sub>Publicar un objeto</sub></td>
+    <td align="center"><img src="documentacion/capturas/tablet/solicitudes.png" alt="Solicitudes en tablet iPad Pro" width="220"><br><sub>Solicitudes</sub></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="documentacion/capturas/tablet/reportes.png" alt="Reportes en tablet iPad Pro" width="220"><br><sub>Reportes</sub></td>
+  </tr>
+</table>
