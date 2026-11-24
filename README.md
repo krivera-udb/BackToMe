@@ -1,4 +1,11 @@
-# BackToMe — objetos perdidos y encontrados UDB
+# Aplicación BackToMe
+
+**Creada por las estudiantes:**
+
+- Kimberly Alexandra Rivera Lopez — RL261989
+- Andrea Michelle Jimenez Aguilar — JA262091
+
+## Objetos perdidos y encontrados UDB
 
 BackToMe es una aplicación web para que la comunidad de la Universidad Don Bosco publique, busque y gestione reportes de objetos perdidos y encontrados.
 
@@ -149,13 +156,13 @@ Para evidenciar el requisito de consumo de una API externa, configura Cloudinary
 
 Tras guardar las variables, reinicia el sitio Node.js. React y la API se sirven desde la misma dirección. Comprueba la página pública, el registro con correo, el inicio de sesión, la carga de objetos, la imagen, la edición, la solicitud y el correo de recuperación usando cuentas de demostración.
 
-### Dirección pública
+### Enlaces del proyecto
 
-- URL publicada: [https://backtome.alwaysdata.net](https://backtome.alwaysdata.net)
+- Aplicación publicada: [BackToMe](https://backtome.alwaysdata.net)
 - Proveedor: Alwaysdata (modalidad gratuita de demostración).
 - Repositorio público: [https://github.com/krivera-udb/BackToMe](https://github.com/krivera-udb/BackToMe)
+- Video de la presentación y explicación del proyecto: [Ver video en OneDrive](https://1drv.ms/v/c/ae9d4f575f71ccfe/IQBS7yVmAY0FT6xDTAO5zHyRAT9LHve6I5Vf21NhNLARHgo?e=tjcSZ4)
 
-Actualiza esta sección con la dirección definitiva después de desplegar y probar el sitio.
 
 ## Capturas de la aplicación en móvil
 
